@@ -60,7 +60,4 @@ public class WebConfig2 {
         return new ProviderManager(authenticationProvider);
     }
 
-
-
-
 }

@@ -56,6 +56,7 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
         }
     }
+
     @Operation(summary = "Delete a existing user", description = "Only admin API",security = @SecurityRequirement(name = "basicAuth"))
     @ApiResponse(responseCode = "200", description = "User deleted successfully",
             content = @Content(mediaType = "application/json"))
